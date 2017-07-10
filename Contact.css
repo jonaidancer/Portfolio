@@ -1,318 +1,222 @@
-/* generic  */
-
-body {
-    color: #3F3F3F;
-    font-family: 'Droid Sans',Tahoma,Arial,Verdana sans-serif;
-    font-size: 16px;
-    background: #3F3F3F;
+#bg {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		height: 100%;
+		width: 100%;
+		background: #ffffff; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2JiYmJiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==); background: -moz-radial-gradient(center, ellipse cover,  #ffffff 40%, #bbbbbb 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(40%,#ffffff), color-stop(100%,#bbbbbb)); background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -o-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -ms-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: radial-gradient(ellipse at center,  #ffffff 40%,#bbbbbb 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbbbbb',GradientType=1 );
 }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
-
-@font-face {
-    font-family: 'IconicStroke';
-    src: url('http://www.onextrapixel.com/examples/html5-css3-contact-form/font/iconic_stroke-webfont.eot');
-    src: url('http://www.onextrapixel.com/examples/html5-css3-contact-form/font/iconic_stroke-webfont.eot?#iefix') format('embedded-opentype'), url('http://www.onextrapixel.com/examples/html5-css3-contact-form/font/iconic_stroke-webfont.woff') format('woff'), url('http://www.onextrapixel.com/examples/html5-css3-contact-form/font/iconic_stroke-webfont.ttf') format('truetype'), url('http://www.onextrapixel.com/examples/html5-css3-contact-form/font/iconic_stroke-webfont.svg#IconicStrokeRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+.contact {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -125px;
+		margin-top: -125px;
+		height: 250px;
+		width: 250px;
+		background: rgba(0, 0, 0, 0.1);
+		
+		border-radius: 2px;
+		-ms-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-o-border-radius: 2px;
+		-webkit-border-radius: 2px;
 }
-
-h1 {
-    font-family: 'Questrial', Verdana, sans-serif;
-    text-align: center;
-    font-size: 40px;
-    padding: 0;
-    margin: 0 0 20px 0;
-    position: relative;
-    color: #8C8C8C;
+.contact .envelope {
+		position: absolute;
+		height: 93px;
+		width: 165px;
+		left: 50%;
+		margin-left: -83px;
+		top: 50%;
+		margin-top: -50px;
+		background: #F9F9F9;
+		
+		transition: margin-top 300ms;
+		-ms-transition: margin-top 300ms;
+		-moz-transition: margin-top 300ms;
+		-o-transition: margin-top 300ms;
+		-webkit-transition: margin-top 300ms;
 }
-
-/* * have a nice ampersand *
-   ================================================== */
-
-h1:after {
-    font-size: 25px;
-    color: #D6CFCB;
-    content: '&';
-    text-align: center;
-    display: block;
-    width: 100%;
-    font-family: 'Alice', Verdana, serif;
-    text-shadow: 0px 1px 0px #fff;
+.contact:hover .envelope {
+		transition-delay: 150ms;
+		-ms-transition-delay: 150ms;
+		-moz-transition-delay: 150ms;
+		-o-transition-delay: 150ms;
+		margin-top: -20px;
 }
-
-/* * create the gradient bottom *
-   ================================================== */
-
-h1:before {
-    position: absolute;
-    bottom: 15px;
-    content: ' ';
-    text-align: center;
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(182,180,180,0.7) 42%, rgba(180,178,178,0) 43%, rgba(168,166,166,0) 50%, rgba(180,178,178,0) 57%, rgba(182,180,180,0.7) 58%, rgba(238,237,237,0.3) 90%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(42%,rgba(182,180,180,0.7)), color-stop(43%,rgba(180,178,178,0)), color-stop(50%,rgba(168,166,166,0)), color-stop(57%,rgba(180,178,178,0)), color-stop(58%,rgba(182,180,180,0.7)), color-stop(90%,rgba(238,237,237,0.3)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%); /* IE10+ */
-    background: linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%); /* W3C */
+.contact .envelope .top {
+		position: absolute;
+		top: -3px;
+		left: 0px;
+		width: 100%;
+		height: 73px;
+		z-index: 30;
+		overflow: hidden;
+						
+		transform-origin: top;
+		-ms-transform-origin: top;
+		-moz-transform-origin: top;
+		-o-transform-origin: top;
+		-webkit-transform-origin: top;
+					
+		transition: transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
+		-ms-transition: -ms-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
+		-moz-transition: -moz-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
+		-o-transition: -o-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
+		-webkit-transition: -webkit-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
 }
-
-/* ===[ Here comes to good stuff : content styling ]=== */
-#content {
-    max-width: 400px;
-    position: relative;
-    margin: 50px auto;
-    min-height: 200px;
-    z-index: 100;
-    padding: 30px;
-    border: 1px solid #383838;
-    /* My stipped background */
-    background: #D1D1D1; /* Old browsers */
-    background: -moz-repeating-linear-gradient(-45deg, #EFC1CB , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px); /* FF3.6+ */
-    background: -webkit-repeating-linear-gradient(-45deg, #EFC1CB , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px); /* FF3.6+ */
-    background: -o-repeating-linear-gradient(-45deg, #EFC1CB , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px); /* FF3.6+ */
-    background: repeating-linear-gradient(-45deg, #EFC1CB , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px); /* FF3.6+ */
-    /*border-radius*/
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    /*box-shadow*/
-    -webkit-box-shadow: 0px 1px 6px #3F3F3F;
-    -moz-box-shadow: 0px 1px 6px #3F3F3F;
-    box-shadow: 0px 1px 6px #3F3F3F;
+.contact:hover .envelope .top {
+		transition: transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+		-ms-transition: -ms-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+		-moz-transition: -moz-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+		-o-transition: -o-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+		-webkit-transition: -webkit-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+		
+		height: 10px;
+		top: -60px;
+		
+		transform: rotateX(180deg);
+		-ms-transform: rotateX(180deg);
+		-moz-transform: rotateX(180deg);
+		-o-transform: rotateX(180deg);
+		-webkit-transform: rotateX(180deg);
 }
-
-/* * my "fake" background that will hover the stripes *
-   ================================================== */
-#content form {
-    z-index: 101;
+.contact .envelope .outer {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		border-left: 83px solid transparent;
+		border-right: 82px solid transparent;
+		border-top: 70px solid #EEE;
 }
-
-#content:after {
-    background: #F9F9F9;
-    margin: 10px;
-    position: absolute;
-    content : " ";
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: -1;
-    border: 1px #E5E5E5 solid;
-    /*border-radius*/
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+.contact .envelope .outer .inner {
+		position: absolute;
+		left: -81px;
+		top: -73px;
+		border-left: 81px solid transparent;
+		border-right: 80px solid transparent;
+		border-top: 68px solid #333;
 }
-
-
-
-/* * labels*
-   ================================================== */
-
-/* * adding our icon font !!
-   ================================================== */
-
-.iconic:before {
-    font-size: 25px;
-    font-family: "IconicStroke";
+.contact .envelope .bottom {
+		position: absolute;
+		z-index: 20;
+		bottom: 0px;
+		left: 2px;
+		border-left: 81px solid transparent;
+		border-right: 80px solid transparent;
+		border-bottom: 45px solid #333;
 }
-
-.iconic.link:before { content: '/' }
-
-.iconic.quote-alt:before { content: "'" }
-
-.iconic.comment:before { content: "q" }
-
-.iconic.user:before { content: "u" }
-
-.iconic.mail-alt:before { content: "M" }
-
-label {
-    color: #7F7E7E;
-    -webkit-transition: color 1s ease;
-    -moz-transition: color 1s ease;
-    transition: color 1s ease;
+.contact .envelope .left {
+		position: absolute;
+		z-index: 20; top: 0px;
+		left: 0px;
+		border-left: 81px solid #333;
+		border-top: 45px solid transparent;
+		border-bottom: 45px solid transparent;
 }
-
-label:hover { color: #191919 }
-
-label:before {
-    color: #C1BFBD;
-    -webkit-transition: color 1s ease;
-    -moz-transition: color 1s ease;
-    transition: color 1s ease;
+.contact .envelope .right {
+		position: absolute;
+		z-index: 20;
+		top: 0px;
+		right: 0px;
+		border-right: 80px solid #333;
+		border-top: 45px solid transparent;
+		border-bottom: 45px solid transparent;
 }
-
-label:hover:before {
-    color: #969696;
-    -webkit-transition: color 1s ease;
-    -moz-transition: color 1s ease;
-    transition: color 1s ease;
+.contact .envelope .cover {
+		position: absolute;
+		z-index: 15;
+		bottom: 0px;
+		left: 0px;
+		height: 55%;
+		width: 100%;
+		background: #EEE;
 }
-
-p { margin-bottom: 20px }
-
-.indication {
-    color: #878787;
-    font-size: 12px;
-    font-style: italic;
-    text-align: right;
-    padding-right: 10px;
+.contact .envelope .paper {
+		position: absolute;
+		height: 83px;
+		padding-top: 10px;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+		background: #F9F9F9;
+		z-index: 10;
+		transition: margin-top 300ms 0ms;
+		-ms-transition: margin-top 300ms 0ms;
+		-moz-transition: margin-top 300ms 0ms;
+		-o-transition: margin-top 300ms 0ms;
+		-webkit-transition: margin-top 300ms 0ms;
 }
-
-.required { color: #E5224C }
-
-/* * Styling the send button *
-   ================================================== */
-
-input[type=submit] {
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-family: 'Alice',serif;
-    color: #767676;
-    font-size: 18px;
-    padding: 10px 4px;
-    border: 1px solid #E0E0E0;
-    text-shadow: 0px 1px  1px #E8E8E8;
-    background: rgb(247,247,247);
-    background: -moz-linear-gradient(top,  rgba(247,247,247,1) 1%, rgba(242,242,242,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(247,247,247,1)), color-stop(100%,rgba(242,242,242,1)));
-    background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 1%,rgba(242,242,242,1) 100%);
-    background: -o-linear-gradient(top,  rgba(247,247,247,1) 1%,rgba(242,242,242,1) 100%);
-    background: -ms-linear-gradient(top,  rgba(247,247,247,1) 1%,rgba(242,242,242,1) 100%);
-    background: linear-gradient(top,  rgba(247,247,247,1) 1%,rgba(242,242,242,1) 100%);
-    /*border-radius*/
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    /*box-shadow*/
-    -webkit-box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
-    -moz-box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
-    box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
-    /*transition*/
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+.contact:hover .envelope .paper {
+		margin-top: -60px;
+		transition: margin-top 300ms 150ms;
+		-ms-transition: margin-top 300ms 150ms;
+		-moz-transition: margin-top 300ms 150ms;
+		-o-transition: margin-top 300ms 150ms;
+		-webkit-transition: margin-top 300ms 150ms;
 }
-
-input[type=submit]:hover {
-    color: #686868;
-    border-color: #CECECE;
-    background: rgb(244,244,244);
-    background: -moz-linear-gradient(top,  rgba(244,244,244,1) 0%, rgba(242,242,242,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,244,244,1)), color-stop(100%,rgba(242,242,242,1)));
-    background: -webkit-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(242,242,242,1) 100%);
-    background: -o-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(242,242,242,1) 100%);
-    background: -ms-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(242,242,242,1) 100%);
-    background: linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(242,242,242,1) 100%);
-    /*box-shadow*/
-    -webkit-box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
-    -moz-box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
-    box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
+.contact .envelope .paper a {
+		position: relative;
+		display: block;
+		font-size: 14px;
+		margin: 5px;
+		margin-bottom: 0px;
+		text-align: center;
+		color: #333;
+		text-decoration: none;
 }
+.contact .envelope .paper a.call .i {
+		position: absolute;
+		top: 2px;
+		left: 20px;
+		display: inline-block;
+		width: 3px;
+		height: 5px;
+		border-width: 5px 0 5px 2px;
+		border-style: solid;
+		border-color: #555;
+		background: transparent;
+		
+		transform: rotate(-30deg);
+		-ms-transform: rotate(-30deg);
+		-moz-transform: rotate(-30deg);
+		-o-transform: rotate(-30deg);
+		-webkit-transform: rotate(-30deg);
 
-input[type=submit]:active, input[type=submit]:focus {
-    position: relative;
-    top: 1px;
-    color: #515151;
-    background: rgb(234,234,234);
-    background: -moz-linear-gradient(top,  rgba(234,234,234,1) 0%, rgba(242,242,242,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(234,234,234,1)), color-stop(100%,rgba(242,242,242,1)));
-    background: -webkit-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);
-    background: -o-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);
-    background: -ms-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);
-    background: linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);
-    /*box-shadow*/
-    -webkit-box-shadow: 0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
-    -moz-box-shadow: 0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
-    box-shadow: 0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
+		border-top-left-radius: 3px 5px;
+		border-bottom-left-radius: 3px 5px;
+		-moz-border-radius-topleft: 3px 5px;
+		-moz-border-radius-bottomleft: 3px 5px;
+		-webkit-border-top-left-radius: 3px 5px;
+		-webkit-border-bottom-left-radius: 3px 5px;
+																																				
+		transition: border-color 300ms;
+		-ms-transition: border-color 300ms;
+		-moz-transition: border-color 300ms;
+		-o-transition: border-color 300ms;
+		-webkit-transition: border-color 300ms;
 }
+.contact .envelope .paper a {
+		color: #333;
 
-#postcard{
-    z-index: 102;
-    margin: 50px auto;
-    position: absolute;
-    transform: scale(1.2) rotate(30deg);
-    left: 650px;
+		transition: color 200ms;
+		-ms-transition: color 200ms;
+		-moz-transition: color 200ms;
+		-o-transition: color 200ms;
+		-webkit-transition: color 200ms;
 }
-
-.move {
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 1s;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-    animation-name: anim;
+.contact .envelope .paper a:hover {
+		color: #EEE;
 }
-
-@keyframes anim
-{
-    from {left: 650px; transform: scale(1.2) rotate(30deg); z-index:102;  }
-    50%  {left: 1150px; top: -200px; transform: scale(0.8) rotate(45deg); z-index:102; }
-    75% {left: 1000px; top: -200px; transform: scale(0.8) rotate(45deg); z-index:1;}
-    to {left: 650px; transform: scale(1)  rotate(20deg); z-index:1;}
+.contact .envelope .paper a.call:hover .i {
+		border-color: #DDD;
 }
-
-@keyframes animTabletHor
-{
-    from {left: 450px; transform: scale(1.2) rotate(30deg); z-index:102;  }
-    50%  {left: 950px; top: -200px; transform: scale(0.8) rotate(45deg); z-index:102; }
-    75% {left: 700px; top: -200px; transform: scale(0.8) rotate(45deg); z-index:1;}
-    to {left: 450px; transform: scale(1)  rotate(20deg); z-index:1;}
-}
-
-@keyframes animTablet
-{
-    from {left: 250px; transform: scale(1.2) rotate(28deg); z-index:102;  }
-    50%  {left: 800px; top: -200px; transform: scale(0.8) rotate(45deg); z-index:102; }
-    75% {left: 600px; top: -200px; transform: scale(0.8) rotate(45deg); z-index:1;}
-    to {left: 300px; transform: scale(1)  rotate(20deg); z-index:1;}
-}
-
-@keyframes animPhone
-{
-    from {transform: scale(1.2) rotate(28deg);}
-    25% {transform: scale(1) rotate(0deg);}
-    50% { transform: scale(0.8) rotate(0deg); top: -550px; ; z-index:102;}
-    75% { transform: scale(0.9) rotate(0deg); top: -200px; z-index:1;}
-    to { transform: scale(1) rotate(0deg); top: -100px; z-index:1;}
-}
-
-@media (min-width: 981px) and (max-width : 1280px) {
-    #postcard{
-        left: 450px;
-    }
-    
-    .move {
-        animation-name: animTabletHor;
-    }
-}
-
-@media (min-width: 768px) and (max-width : 980px) {
-    #postcard{
-        transform: scale(1.2) rotate(28deg);
-        left: 250px;
-    }
-    
-    .move {
-        animation-name: animTablet;
-    }
-}
-
-@media (max-width: 767px) {
-    #postcard{
-        left: auto;
-        top: 0px;
-    }
-    .move {
-        animation-name: animPhone;
-    }
+.contact .envelope .paper a.mail .i {
+		position: absolute;
+		top: 0px;
+		left: 17px;
+		display: inline-block;
+		font-size: 13px;
+		font-weight: bold;
 }
