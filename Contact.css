@@ -30,7 +30,7 @@
 		margin-left: -83px;
 		top: 30%;
 		margin-top: -50px;
-		background: black;
+		background: yellowgreen;
 		
 		transition: margin-top 300ms;
 		-ms-transition: margin-top 300ms;
@@ -88,7 +88,7 @@
 		left: 0px;
 		border-left: 83px solid transparent;
 		border-right: 82px solid transparent;
-		border-top: 70px solid black;
+		border-top: 70px solid yellowgreen;
 }
 .contact .envelope .outer .inner {
 		position: absolute;
@@ -96,7 +96,7 @@
 		top: -73px;
 		border-left: 81px solid transparent;
 		border-right: 80px solid transparent;
-		border-top: 68px solid lightgreen;
+		border-top: 68px black;
 }
 .contact .envelope .bottom {
 		position: absolute;
@@ -105,13 +105,13 @@
 		left: 2px;
 		border-left: 81px solid transparent;
 		border-right: 80px solid transparent;
-		border-bottom: 45px solid lightgreen;
+		border-bottom: 45px solid yellowgreen;
 }
 .contact .envelope .left {
 		position: absolute;
 		z-index: 20; top: 0px;
 		left: 0px;
-		border-left: 81px solid lightgreen;
+		border-left: 81px solid yellowgreen;
 		border-top: 45px solid transparent;
 		border-bottom: 45px solid transparent;
 }
@@ -120,7 +120,7 @@
 		z-index: 20;
 		top: 0px;
 		right: 0px;
-		border-right: 80px solid lightgreen;
+		border-right: 80px solid yellowgreen;
 		border-top: 45px solid transparent;
 		border-bottom: 45px solid transparent;
 }
@@ -131,7 +131,7 @@
 		left: 0px;
 		height: 55%;
 		width: 100%;
-		background: lightgreen;
+		background: black;
 }
 .contact .envelope .paper {
 		position: absolute;
