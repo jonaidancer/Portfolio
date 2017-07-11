@@ -4,7 +4,7 @@
 		top: 0px;
 		height: 100%;
 		width: 100%;
-		background: lightblue; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2JiYmJiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==); background: -moz-radial-gradient(center, ellipse cover,  #ffffff 40%, #bbbbbb 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(40%,#ffffff), color-stop(100%,#bbbbbb)); background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -o-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -ms-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: radial-gradient(ellipse at center,  #ffffff 40%,#bbbbbb 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbbbbb',GradientType=1 );
+		background: black; background :
 }
 .contact {
 		position: absolute;
@@ -28,9 +28,9 @@
 		width: 165px;
 		left: 50%;
 		margin-left: -83px;
-		top: 50%;
+		top: 30%;
 		margin-top: -50px;
-		background: #F9F9F9;
+		background: black;
 		
 		transition: margin-top 300ms;
 		-ms-transition: margin-top 300ms;
@@ -88,7 +88,7 @@
 		left: 0px;
 		border-left: 83px solid transparent;
 		border-right: 82px solid transparent;
-		border-top: 70px solid #EEE;
+		border-top: 70px solid black;
 }
 .contact .envelope .outer .inner {
 		position: absolute;
@@ -96,7 +96,7 @@
 		top: -73px;
 		border-left: 81px solid transparent;
 		border-right: 80px solid transparent;
-		border-top: 68px solid lightblue;
+		border-top: 68px solid lightgreen;
 }
 .contact .envelope .bottom {
 		position: absolute;
@@ -105,13 +105,13 @@
 		left: 2px;
 		border-left: 81px solid transparent;
 		border-right: 80px solid transparent;
-		border-bottom: 45px solid lightblue;
+		border-bottom: 45px solid lightgreen;
 }
 .contact .envelope .left {
 		position: absolute;
 		z-index: 20; top: 0px;
 		left: 0px;
-		border-left: 81px solid lightblue;
+		border-left: 81px solid lightgreen;
 		border-top: 45px solid transparent;
 		border-bottom: 45px solid transparent;
 }
@@ -120,7 +120,7 @@
 		z-index: 20;
 		top: 0px;
 		right: 0px;
-		border-right: 80px solid lightblue;
+		border-right: 80px solid lightgreen;
 		border-top: 45px solid transparent;
 		border-bottom: 45px solid transparent;
 }
@@ -131,7 +131,7 @@
 		left: 0px;
 		height: 55%;
 		width: 100%;
-		background: lightblue;
+		background: lightgreen;
 }
 .contact .envelope .paper {
 		position: absolute;
