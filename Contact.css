@@ -6,22 +6,7 @@
 		width: 100%;
 		background: black; background :
 }
-.contact {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		margin-left: -125px;
-		margin-top: -125px;
-		height: 250px;
-		width: 250px;
-		background: black(0, 0, 0, 0.1);
-		
-		border-radius: 2px;
-		-ms-border-radius: 2px;
-		-moz-border-radius: 2px;
-		-o-border-radius: 2px;
-		-webkit-border-radius: 2px;
-}
+
 .contact .envelope {
 		position: absolute;
 		height: 93px;
@@ -30,7 +15,7 @@
 		margin-left: -83px;
 		top: 30%;
 		margin-top: -50px;
-		background: yellowgreen;
+		background: black;
 		
 		transition: margin-top 300ms;
 		-ms-transition: margin-top 300ms;
@@ -163,7 +148,7 @@
 		margin: 5px;
 		margin-bottom: 0px;
 		text-align: center;
-		color: #333;
+		color: black;
 		text-decoration: none;
 }
 .contact .envelope .paper a.call .i {
@@ -175,7 +160,7 @@
 		height: 5px;
 		border-width: 5px 0 5px 2px;
 		border-style: solid;
-		border-color: #555;
+		border-color: black;
 		background: transparent;
 		
 		transform: rotate(-30deg);
@@ -207,7 +192,7 @@
 		-webkit-transition: color 200ms;
 }
 .contact .envelope .paper a:hover {
-		color: lightblue;
+		color: white;
 }
 .contact .envelope .paper a.call:hover .i {
 		border-color: whitesmoke;
@@ -220,3 +205,47 @@
 		font-size: 13px;
 		font-weight: bold;
 }
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid yellowgreen;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid yellowgreen; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: yellowgreen;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:yellowgreen; }
