@@ -1,4 +1,3 @@
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -5952,19 +5951,19 @@ fieldset[disabled] a.btn {
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #333;
-  background-color: #e6e6e6;
+  color: yellow;
+  background-color: yellowgreen;
   border-color: #8c8c8c;
 }
 .btn-default:hover {
-  color: #333;
+  color: yellowgreen;
   background-color: #e6e6e6;
-  border-color: #adadad;
+  border-color: yellowgreen;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333;
+  color: yellowgreenb  b;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
@@ -9654,3 +9653,4 @@ button.close {
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
+C
